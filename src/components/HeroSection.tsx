@@ -1,5 +1,5 @@
 import heroVideo from "@/assets/hero-video.mp4";
-import photoStreet from "@/assets/photo-street.jpeg";
+
 
 const HeroSection = () => {
   return (
@@ -53,17 +53,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Side accent image — desktop */}
-      <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[38vw] overflow-hidden">
-        <img
-          src={photoStreet}
-          alt="Sinethemba Nguta street fashion"
-          className="w-full h-full object-cover object-top opacity-70"
-          style={{ filter: "grayscale(20%) contrast(1.05)" }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent" />
-      </div>
     </section>
   );
 };
