@@ -1,5 +1,5 @@
-import heroVideo from "@/assets/hero-video.mp4";
-
+import photoEllesse from "@/assets/photo-ellesse.jpeg";
+import photoStreet from "@/assets/photo-street.jpeg";
 
 const HeroSection = () => {
   return (
@@ -7,19 +7,13 @@ const HeroSection = () => {
       id="hero"
       className="relative min-h-screen bg-charcoal flex flex-col overflow-hidden"
     >
-      {/* Background video layer */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Scale up slightly and shift to crop out watermark (usually bottom-right corner) */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute w-full h-full object-cover object-center opacity-50"
-          style={{ transform: "scale(1.12)", transformOrigin: "center center" }}
-        >
-          <source src={heroVideo} type="video/mp4" />
-        </video>
+      {/* Background image layer */}
+      <div className="absolute inset-0">
+        <img
+          src={photoEllesse}
+          alt="Sinethemba Nguta - hero"
+          className="w-full h-full object-cover object-center opacity-40"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/60 to-charcoal/30" />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-transparent to-transparent" />
       </div>
@@ -53,6 +47,17 @@ const HeroSection = () => {
         </div>
       </div>
 
+      {/* Side accent image — desktop */}
+      <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[38vw] overflow-hidden">
+        <img
+          src={photoStreet}
+          alt="Sinethemba Nguta street fashion"
+          className="w-full h-full object-cover object-top opacity-70"
+          style={{ filter: "grayscale(20%) contrast(1.05)" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent" />
+      </div>
     </section>
   );
 };
