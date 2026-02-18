@@ -2,33 +2,9 @@ import photoHoodie from "@/assets/photo-hoodie.jpeg";
 import photoBlue from "@/assets/photo-blue.jpeg";
 import photoEllesse from "@/assets/photo-ellesse.jpeg";
 import photoStreet from "@/assets/photo-street.jpeg";
-
-const photos = [
-  {
-    src: photoEllesse,
-    alt: "Sinethemba Nguta - Ellesse editorial",
-    label: "Editorial",
-    span: "col-span-1 row-span-2",
-  },
-  {
-    src: photoHoodie,
-    alt: "Sinethemba Nguta - Local Celebrity hoodie",
-    label: "Brand Collaboration",
-    span: "col-span-1 row-span-1",
-  },
-  {
-    src: photoStreet,
-    alt: "Sinethemba Nguta - Street fashion",
-    label: "Street Style",
-    span: "col-span-1 row-span-1",
-  },
-  {
-    src: photoBlue,
-    alt: "Sinethemba Nguta - Blue sweater portrait",
-    label: "Portrait",
-    span: "col-span-1 row-span-1",
-  },
-];
+import photoLocalCelebrity from "@/assets/photo-local-celebrity.jpeg";
+import photoEllesse2 from "@/assets/photo-ellesse2.jpeg";
+import photoWhiteHoodie from "@/assets/photo-white-hoodie.jpeg";
 
 const PortfolioSection = () => {
   return (
@@ -52,10 +28,10 @@ const PortfolioSection = () => {
           </p>
         </div>
 
-        {/* Gallery grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 auto-rows-[280px] md:auto-rows-[320px]">
-          {/* Large featured image */}
-          <div className="col-span-1 md:col-span-1 md:row-span-2 relative overflow-hidden group">
+        {/* Gallery — Row 1: 3 columns */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mb-3 md:mb-4">
+          {/* Large tall left — Ellesse editorial */}
+          <div className="col-span-1 row-span-2 relative overflow-hidden group" style={{ height: "560px" }}>
             <img
               src={photoEllesse}
               alt="Sinethemba Nguta - Ellesse editorial"
@@ -67,11 +43,11 @@ const PortfolioSection = () => {
             </div>
           </div>
 
-          {/* Top right */}
-          <div className="col-span-1 relative overflow-hidden group">
+          {/* Top middle — Local Celebrity full-body */}
+          <div className="col-span-1 relative overflow-hidden group" style={{ height: "270px" }}>
             <img
-              src={photoHoodie}
-              alt="Sinethemba Nguta - Local Celebrity hoodie"
+              src={photoLocalCelebrity}
+              alt="Sinethemba Nguta - Local Celebrity brand shoot"
               className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -80,11 +56,53 @@ const PortfolioSection = () => {
             </div>
           </div>
 
-          {/* Middle right */}
-          <div className="col-span-1 relative overflow-hidden group">
+          {/* Top right — Hoodie */}
+          <div className="col-span-1 relative overflow-hidden group" style={{ height: "270px" }}>
+            <img
+              src={photoHoodie}
+              alt="Sinethemba Nguta - Local Celebrity hoodie"
+              className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute bottom-4 left-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+              <span className="font-body text-xs tracking-[0.2em] uppercase text-cream/80">Street Wear</span>
+            </div>
+          </div>
+
+          {/* Bottom middle — White hoodie action */}
+          <div className="col-span-1 relative overflow-hidden group" style={{ height: "270px" }}>
+            <img
+              src={photoWhiteHoodie}
+              alt="Sinethemba Nguta - White hoodie pose"
+              className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute bottom-4 left-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+              <span className="font-body text-xs tracking-[0.2em] uppercase text-cream/80">Editorial</span>
+            </div>
+          </div>
+
+          {/* Bottom right — Ellesse 2 portrait */}
+          <div className="col-span-1 relative overflow-hidden group" style={{ height: "270px" }}>
+            <img
+              src={photoEllesse2}
+              alt="Sinethemba Nguta - Ellesse portrait"
+              className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute bottom-4 left-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+              <span className="font-body text-xs tracking-[0.2em] uppercase text-cream/80">Brand Collab</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Gallery — Row 2: wide + portrait side by side */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+          {/* Blue portrait */}
+          <div className="col-span-1 relative overflow-hidden group" style={{ height: "340px" }}>
             <img
               src={photoBlue}
-              alt="Sinethemba Nguta - Blue portrait"
+              alt="Sinethemba Nguta - Blue sweater portrait"
               className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -93,8 +111,8 @@ const PortfolioSection = () => {
             </div>
           </div>
 
-          {/* Bottom spanning */}
-          <div className="col-span-2 md:col-span-1 relative overflow-hidden group">
+          {/* Street — spans 2 cols */}
+          <div className="col-span-1 md:col-span-2 relative overflow-hidden group" style={{ height: "340px" }}>
             <img
               src={photoStreet}
               alt="Sinethemba Nguta - Street fashion"
