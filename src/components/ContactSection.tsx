@@ -41,9 +41,9 @@ const ContactSection = () => {
               Follow
             </span>
             {[
-              { label: "Instagram", href: "#" },
-              { label: "TikTok", href: "#" },
-              { label: "Twitter / X", href: "#" },
+            { label: "Facebook", href: "https://www.facebook.com/UPTOWN SNIZZY" },
+              { label: "Instagram", href: "https://www.instagram.com/uptownsnizzyworld" },
+              { label: "TikTok", href: "https://www.tiktok.com/@TheeOnlySnizzy" },
             ].map((social) => (
               <a
                 key={social.label}
