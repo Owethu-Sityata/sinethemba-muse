@@ -25,7 +25,7 @@ const HeroSection = () => {
           style={{ animationDelay: "0.2s", opacity: 0 }}
         >
           <p className="font-body text-xs tracking-[0.35em] uppercase text-terracotta mb-6">
-            Khayelitsha · Cape Town · Johannesburg
+            · Cape Town · Johannesburg
           </p>
           <h1 className="font-display text-6xl md:text-8xl lg:text-[9rem] font-black text-cream leading-none tracking-tight mb-4">
             Snizzy

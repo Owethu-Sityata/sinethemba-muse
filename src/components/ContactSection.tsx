@@ -26,7 +26,7 @@ const ContactSection = () => {
 
           {/* Contact email */}
           <a
-            href="mailto:sinethembanguta@email.com"
+            href="mailto:uptownsnizzy@gmail.com"
             className="inline-flex items-center gap-4 group mb-16"
           >
             <span className="font-body text-lg md:text-xl text-cream/80 group-hover:text-terracotta transition-colors duration-300 border-b border-cream/20 group-hover:border-terracotta pb-1">
