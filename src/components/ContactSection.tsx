@@ -30,7 +30,7 @@ const ContactSection = () => {
             className="inline-flex items-center gap-4 group mb-16"
           >
             <span className="font-body text-lg md:text-xl text-cream/80 group-hover:text-terracotta transition-colors duration-300 border-b border-cream/20 group-hover:border-terracotta pb-1">
-              sinethembanguta@email.com
+              uptownsnizzy@gmail.com
             </span>
             <span className="text-terracotta group-hover:translate-x-2 transition-transform duration-300">→</span>
           </a>
@@ -61,10 +61,10 @@ const ContactSection = () => {
       <div className="mt-24 border-t border-cream/10 pt-8">
         <div className="max-w-7xl mx-auto px-6 md:px-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <span className="font-display text-cream/30 text-sm italic">
-            Sinethemba Nguta
+            uptownsnizzy
           </span>
           <span className="font-body text-xs text-cream/20 tracking-wider">
-            © {new Date().getFullYear()} · Khayelitsha · Cape Town · Johannesburg
+            © {new Date().getFullYear()} · Cape Town · Johannesburg
           </span>
           <span className="font-body text-xs tracking-[0.2em] uppercase text-terracotta/40">
             Model · Cultural Thinker · Creative
